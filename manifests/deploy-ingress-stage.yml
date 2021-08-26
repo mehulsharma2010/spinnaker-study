@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
     annotations:
         nginx.ingress.kubernetes.io/rewrite-target: /$2
-    name: mild-temper-ingress
+    name: mehul-ingress
     namespace: microservices
 spec:
     rules:
         -   host: stage.tiered-planet.net
             http:
                 paths:
-                    -   path: /mild-temper(/|$)(.*)
+                    -   path: /mehul(/|$)(.*)
                         backend:
-                            serviceName: mild-temper-microservice-service
+                            serviceName: mehul-microservice-service
                             servicePort: 30201
