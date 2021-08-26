@@ -6,3 +6,4 @@ COPY run.sh /
 COPY install_app.sh /
 
 ENTRYPOINT ["/run.sh"]
+
